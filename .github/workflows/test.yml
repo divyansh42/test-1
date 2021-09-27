@@ -17,4 +17,4 @@ jobs:
         curl https://mirror.openshift.com/pub/openshift-v4/clients/crc/1.31.2/crc-windows-installer.zip
         unzip crc-windows-installer.zip
         ls
-        msiexec /i "E:\crc-windows-amd64.msi
+        # msiexec /i "E:\crc-windows-amd64.msi
