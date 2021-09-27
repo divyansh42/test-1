@@ -1,0 +1,20 @@
+name: Scan Golang project
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+
+    name: Install CRC
+    steps:
+    - name: Download & Install
+      run: |
+        curl https://mirror.openshift.com/pub/openshift-v4/clients/crc/1.31.2/crc-windows-installer.zip
+        unzip crc-windows-installer.zip
+        ls
+        msiexec /i "E:\crc-windows-amd64.msi
