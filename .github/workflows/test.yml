@@ -24,4 +24,5 @@ jobs:
         # ls crc-windows-1.31.2-amd64
         cd crc-windows-1.31.2-amd64
         # msiexec.exe --version
+        echo "Installing"
         msiexec.exe /i crc-windows-amd64.msi
