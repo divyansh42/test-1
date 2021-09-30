@@ -15,8 +15,8 @@ jobs:
     - name: Download & Install
       run: |
         curl -sSLf \
-        https://mirror.openshift.com/pub/openshift-v4/clients/kam/latest/kam-windows-amd64.zip | \
-        tar -C ./ -zxv -f - \
+        https://mirror.openshift.com/pub/openshift-v4/clients/kam/latest/kam-windows-amd64.zip
+        unzip kam-windows-amd64.zip -d ./
         # curl https://mirror.openshift.com/pub/openshift-v4/clients/crc/1.31.2/crc-windows-installer.zip
         # curl https://mirror.openshift.com/pub/openshift-v4/clients/kam/latest/kam-windows-amd64.zip
         # unzip kam-windows-amd64.zip
